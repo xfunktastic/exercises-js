@@ -1,4 +1,3 @@
-// Objeto Persona con las propiedades nombre, edad y género
 const Persona = {
     nombre: "",
     edad: 0,
@@ -8,7 +7,6 @@ const Persona = {
     }
 }
 
-// Objeto Estudiante que hereda de Persona
 const Estudiante = Object.create(Persona)
 Estudiante.curso = ""
 Estudiante.grupo = ""
@@ -16,7 +14,6 @@ Estudiante.registrar = function() {
     console.log(`El nombre es: ${this.nombre}, edad: ${this.edad}, genero: ${this.genero}, curso: ${this.curso}, grupo: ${this.grupo}`)
 }
 
-// Objeto Profesor que hereda de Persona
 const Profesor = Object.create(Persona)
 Profesor.asignatura = ""
 Profesor.nivel = ""
